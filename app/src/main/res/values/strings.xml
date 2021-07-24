@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mobile_App</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name
+</string>
+    <string name="tdo">TODO</string>
+    <string name="roll_number"> Roll Number </string>
+    <string name="branch"> Branch </string>
+    <string name="faculty"> Faculty </string>
+    <string name="classes_attended">Classes Attended</string>
+    <string name="upload_images">Upload Images</string>
+    <string name="profile">Profile</string>
+
+</resources>
