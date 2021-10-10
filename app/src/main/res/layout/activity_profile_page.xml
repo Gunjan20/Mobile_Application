@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#050505"
+    tools:context=".profile_page">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="535dp"
+        android:layout_height="974dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.8"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617"
+        app:srcCompat="@drawable/background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-62dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView2"
+        android:layout_width="142dp"
+        android:layout_height="132dp"
+        android:contentDescription="@string/todo"
+        android:cropToPadding="false"
+        android:src="@drawable/images"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141"
+        app:shapeAppearanceOverlay="@style/Circular"
+        tools:ignore="MissingClass,MissingConstraints"
+        tools:srcCompat="@drawable/images"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="218dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="@string/name"
+        android:textAppearance="@style/name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/roll_number"
+        android:layout_width="218dp"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:text="@string/roll_number"
+        android:textAppearance="@style/roll_number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="218dp"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:text="@string/branch"
+        android:textAppearance="@style/branch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roll_number"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/faculty"
+        android:layout_width="218dp"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:text="@string/faculty"
+        android:textAppearance="@style/faculty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/branch"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="222dp"
+        android:layout_height="55dp"
+        android:text="@string/classes_attended"
+        app:backgroundTint="#10496D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faculty"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="193dp"
+        android:layout_height="49dp"
+        android:text="@string/upload_images"
+        app:backgroundTint="#10496D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterButton"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <TextView
+        android:id="@+id/PhoneNo"
+        android:layout_width="218dp"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:text="@string/phoneno"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faculty" />
+
+    <TextView
+        android:id="@+id/PName"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="249dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/Fix_Name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/roll_no"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/fix_roll_number"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/roll_number"
+        app:layout_constraintTop_toBottomOf="@+id/PName"
+        tools:text="Roll No." />
+
+    <TextView
+        android:id="@+id/Branch"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/fix_branch"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/branch"
+        app:layout_constraintTop_toBottomOf="@+id/roll_no"
+        tools:text="Branch" />
+
+    <TextView
+        android:id="@+id/Fix_Faculty"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/fix_faculty"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/faculty"
+        app:layout_constraintTop_toBottomOf="@+id/Branch" />
+
+    <TextView
+        android:id="@+id/Fix_PhoneNo"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/fix_phone_number"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/PhoneNo"
+        app:layout_constraintTop_toBottomOf="@+id/Fix_Faculty"
+        tools:text="Phone No." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

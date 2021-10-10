@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="502dp"
+        android:layout_height="784dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509"
+        app:srcCompat="@drawable/background"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="164dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginLeft="256dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginRight="134dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/register"
+        app:backgroundTint="#10496D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/Upload_Image"
+        android:layout_width="172dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="152dp"
+        android:text="@string/upload_images"
+        app:backgroundTint="#10496D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Create_password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress"
+        app:passwordToggleEnabled="true" />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="number|phone"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        tools:ignore="Autofill,LabelFor"
+        tools:visibility="visible" />
+
+    <RadioButton
+        android:id="@+id/Male"
+        android:layout_width="86dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/male"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+        tools:visibility="visible" />
+
+    <RadioButton
+        android:id="@+id/Female"
+        android:layout_width="101dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/female"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+        tools:text="Female" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="Autofill,LabelFor" />
+
+    <ImageButton
+        android:id="@+id/Show_Button"
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/show_icon"
+        android:src="@drawable/ic_show_password"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editPassword" />
+
+    <EditText
+        android:id="@+id/Roll_Number"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/roll_number"
+        android:inputType="number"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <EditText
+        android:id="@+id/Faculty"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/faculty"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Roll_Number" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
