@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mobile_app">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile_App">
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="face" />
+        <activity
+            android:name=".activity_home"
+            android:label="@string/home_activity_title" />
+        <activity android:name=".login_page" />
+        <activity android:name=".profile_page" />
+        <activity
+            android:name=".registration_page"
+            android:label="@string/registration_page_activity_title" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,5 +30,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
